@@ -1,5 +1,7 @@
 # TrainingDynamics
-Implementation of TrainingDynamics on glue data
+Implementation of TrainingDynamics on glue data.
+
+glue data:
 + rte
 + qqp 
 + mrpc
@@ -9,4 +11,5 @@ Implementation of TrainingDynamics on glue data
 paper: https://arxiv.org/pdf/2009.10795.pdf
 
 To run:
+
 `python run.py`
