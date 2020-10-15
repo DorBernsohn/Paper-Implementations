@@ -52,7 +52,7 @@ class getData(Structures):
         sns.kdeplot(x=self.dataset_map.variability, y=self.dataset_map.confidence, 
                     levels=8, color=sns.color_palette("Paired")[7], linewidths=1, ax=ax)
 
-        ax.set(title=f'Data map for {self.dataset_name} train set\nbased on a {self.model_name} classifier',
+        ax.set(title=f'DataSet: {self.dataset_name} (train set)\nModel: {self.model_name} classifier',
             xlabel='Variability', ylabel='Confidence')
 
         ax.legend(title='Correctness')
