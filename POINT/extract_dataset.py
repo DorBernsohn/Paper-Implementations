@@ -63,14 +63,14 @@ def preprocess(images_array, subset = 'train'):
             res_img.save(img_name)
 
 if __name__ == '__main__':
-    
+
     # Set image width and height
     SIZE_WIDTH = 224
     SIZE_HEIGHT = 224
     # Set file locations
-    save_dir = r'C:\Users\dbernsohn\Desktop\POINT\MS DataSet\MS DataSet\MSDataSet_process'
-    mat_file = r'C:\Users\dbernsohn\Desktop\POINT\MS DataSet\MS DataSet\data\annotations'
-    image_path = r'C:\Users\dbernsohn\Desktop\POINT\MS DataSet\MS DataSet\images'
+    save_dir = r'\\MS DataSet\\MS DataSet\\MSDataSet_process'
+    mat_file = r'\\MS DataSet\\MS DataSet\\data\\annotations'
+    image_path = r'\\MS DataSet\\MS DataSet\\images'
     # Load matrix
     data = scio.loadmat(mat_file)
     train_mat = data['train']
