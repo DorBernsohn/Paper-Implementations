@@ -5,23 +5,23 @@ from PIL import Image
 import scipy.io as scio
 from skimage import data
 
-def check_folder_exist(folder_paths):
+def check_folder_exist(folder_paths: str) -> None:
     """check whether a folder is exist and create one if not
 
     Args:
-        folder_paths ([string]): a string path
+        folder_paths (str): a string path
     """    
     for folder_path in folder_paths:
         if not os.path.exists(folder_path):
                 os.makedirs(folder_path)
 
-def preprocess(images_array, subset = 'train'):
+def preprocess(images_array: np.array, subset: str = 'train') -> None:  
     """preprocess the subset dataset for the MS dataset
 
     Args:
         images_array (np.array): arraa of the images and annotaions
         subset (str, optional): the subset name. Defaults to 'train'.
-    """    
+    """
     print(f"Preprocess {subset}")
     for i in tqdm(range(images_array.shape[1])):
         name = images_array[0,i]['name'][0]
